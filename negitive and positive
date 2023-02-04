@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    char s = 5;
+
+    printf("The value of 's' is %d\n",s);
+    s = s | 0x80;   /* set left-most bit */
+    printf("The value of 's' is %d\n",s);
+
+    return(0);
+}
