@@ -1,0 +1,13 @@
+#include<stdio.h>                                                               
+                                                                                
+void main()                                                                     
+{                                                                               
+  double cost, tax_rate, sales_tax;                                             
+  printf("Enter cost amount: ");                                                
+  scanf("%lf", &cost);                                                          
+  printf("Enter tax rate: ");                                                   
+  scanf("%lf", &tax_rate);                                                      
+                                                                                
+  sales_tax =  cost*(tax_rate/100);;                                            
+  printf("Sales tax: %.2lf\n", sales_tax);                                      
+} 
