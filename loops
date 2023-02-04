@@ -1,0 +1,23 @@
+// C Program to Find Average of N Numbers using For loop
+#include <stdio.h>
+
+int main() {
+    int x, i;
+    float avg = 0, y;
+    
+    // x - To store number of elements
+    // avg - To store total average value
+    // y - To store total input numbers
+
+    printf("Enter the number of elements to calculate average::\n");
+    scanf("%d", &x);
+    
+    printf("Enter %d elements one by one\n\n", x);
+    for(i = 0; i < x; i++) {
+        scanf("%f", &y);
+        avg += y;
+    }
+    avg /= x;
+    printf("\nThe average of the entered input numbers is = %f", avg);
+    return 0;
+}
