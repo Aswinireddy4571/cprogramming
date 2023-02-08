@@ -1,5 +1,5 @@
+//taxes//
 #include<stdio.h>                                                               
-                                                                                
 void main()                                                                     
 {                                                                               
   double cost, tax_rate, sales_tax;                                             
