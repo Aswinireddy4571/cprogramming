@@ -1,3 +1,4 @@
+//add,sub,mul,div//
 #include<stdio.h>
 #include<conio.h>
 int main()
