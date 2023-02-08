@@ -1,3 +1,4 @@
+//permute number//
 #include<stdio.h>
 #include<string.h>
 void swap(char*x,char*y)
