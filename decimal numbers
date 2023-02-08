@@ -1,3 +1,4 @@
+//decimal numbers//
 #include<stdio.h>
 int main()
 {
