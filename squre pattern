@@ -1,9 +1,5 @@
-/**
- * C program to print hollow square star pattern
- */
-
-#include <stdio.h>
-
+/* C program to print hollow square star pattern*/
+ #include <stdio.h>
 int main()
 {
     int i, j, N;
