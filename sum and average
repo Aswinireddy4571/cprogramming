@@ -1,3 +1,4 @@
+/*sum and average*/
 #include<stdio.h>
 
 int main()
