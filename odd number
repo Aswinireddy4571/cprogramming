@@ -1,3 +1,4 @@
+//odd number//
 #include <stdio.h>
 int main(int argc, char const *argv[]){
    int n = 10;
