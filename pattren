@@ -1,3 +1,4 @@
+//pattren//
 #include <stdio.h>
 int main() {
    int rows, i, j, number = 1;
