@@ -1,3 +1,4 @@
+//lcm and hcf//
 #include <stdio.h>
  
 int main() {
