@@ -1,3 +1,4 @@
+/*arthemetic operators*/
 #include <stdio.h>
 
 main() {
