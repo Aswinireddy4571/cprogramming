@@ -1,3 +1,4 @@
+//letters repeatly//
 #include <stdio.h>
 int main() {
     int num;
