@@ -1,4 +1,4 @@
-// C Program to Find Average of N Numbers using For loop
+// C Program to Find Average of N Numbers using For loop//
 #include <stdio.h>
 
 int main() {
