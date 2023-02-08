@@ -1,3 +1,4 @@
+//teaching non teaching//
 #include<stdio.h>
 main() {
 int num,t,n,i,nt,st;
