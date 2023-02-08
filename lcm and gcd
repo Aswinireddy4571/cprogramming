@@ -1,4 +1,4 @@
-   
+//lcm and gcd//   
 #include<stdio.h>  
   
 int main()  
