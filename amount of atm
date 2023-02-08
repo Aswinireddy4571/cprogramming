@@ -1,6 +1,5 @@
-/*
- * C Program to Display the ATM Transaction
- */
+
+ /* C Program to Display the ATM Transaction*/
 #include <stdio.h>
  
 unsigned long amount=1000, deposit, withdraw;
