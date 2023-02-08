@@ -1,4 +1,4 @@
-
+/*student grades and marks*/
 #include<stdio.h>
 void main()
 {
