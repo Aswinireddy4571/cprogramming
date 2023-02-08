@@ -1,3 +1,4 @@
+//diagonal matrix//
 #include<stdio.h>
 
 void main()
