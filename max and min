@@ -1,6 +1,5 @@
- #include <conio.h>
- 
- 
+//maximum and minimum//
+#include <conio.h>
 int main()
 {
     int a[1000],i,n,min,max;
