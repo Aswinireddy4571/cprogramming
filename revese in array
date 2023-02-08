@@ -1,4 +1,4 @@
-//revese//
+//revese in array//
 #include<stdio.h>
 int main()
 {
