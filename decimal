@@ -1,0 +1,17 @@
+//c program to find square and cube of numbers//
+#include<stdio.h>
+int main () {
+	int num,square,cube;
+	//taking input
+	printf("enter an decimal number:");
+	scanf("%d",&num);
+	//finding square
+	square=num*num;
+	//finding cube
+	cube=num*num*num;
+	//disiplaying result
+	printf("suare of %d is:%d\n",num,square);
+	printf("cube of %d is:%d\n",num,cube);
+	return 0;
+	
+}
