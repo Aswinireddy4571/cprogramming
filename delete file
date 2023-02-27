@@ -1,0 +1,24 @@
+// C program to delete a specified file
+// using system() library function
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char fileName[] = "includehelp.txt";
+    char cmd[32] = { 0 };
+
+    int ret = 0;
+
+    sprintf(cmd, "rm %s", fileName);
+
+    ret = system(cmd);
+
+    if (ret == 0)
+        printf("File deleted successfully\n");
+    else
+        printf("Unable to delete file %s\n", fileName);
+
+    return 0;
+}
