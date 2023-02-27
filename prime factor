@@ -20,4 +20,4 @@ int main()
  printf ("This is not a composite number!");
  }
  return 0;
-    
+ }
