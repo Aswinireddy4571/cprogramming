@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main()
+{ 
+ float principle, rate, sinterest;
+ int time;
+ printf("Is the customer is senior citizen Y/N :\n");
+ printf("Enter Principle Amount :\n Rate %% per Annum:\n  Time:\n");
+ scanf ("%f %f %d", &principle, &rate, &time);
+ printf("Is the customer is senior citizen Y/N :\n");
+ sinterest = (principle * rate * time)/ 100.0;
+ 
+ printf ("Principle Amount = %5.2f\n", principle);
+ printf ("Rate %% per Annum   = %5.2f%\n", rate);
+ printf ("Time   = %d years\n", time);
+ printf ("Simple Interest  = %5.2f\n", sinterest);
+}
