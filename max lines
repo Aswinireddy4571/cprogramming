@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_LINE_LENGTH 100
+
+int main() {
+    char filename[50], line[MAX_LINE_LENGTH];
+    FILE *file, *temp;
+
+    // get filename from user
+    printf("Enter name of file to open: ");
+    scanf("%s", filename);
+
+    // open the file in read mode
+    file = fopen(filename, "r");
+
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        exit(1);
+    }
+
+    // create a temporary file to store the reversed lines
+    temp = fopen("temp.txt", "w");
+
+    if (temp == NULL) {
+        printf("Error creating temporary file.\n");
+        exit(1);
+    }
+
+    // read lines from the file and write them to the temporary file in reverse order
+    while (fgets(line, MAX_LINE_LENGTH, file)) {
+        // remove newline character
+        line[strcspn(line, "\n")] = '\0';
+
+        // write the line to the temporary file
+        fprintf(temp, "%s\n", line);
+    }
+
+    // close the files
+    fclose(file);
+    fclose(temp);
+
+    // open the temporary file in read mode
+    temp = fopen("temp.txt", "r");
+
+    if (temp == NULL) {
+        printf("Error opening temporary file.\n");
+        exit(1);
+    }
+
+    // open the original file in write mode
+    file = fopen(filename, "w");
+
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        exit(1);
+    }
+
+    // read lines from the temporary file and write them to the original file in reverse order
+    while (fgets(line, MAX_LINE_LENGTH, temp)) {
+        // remove newline character
+        line[strcspn(line, "\n")] = '\0';
+
+        // write the line to the original file
+        fprintf(file, "%s\n", line);
+    }
+
+    // close the files
+    fclose(file);
+    fclose(temp);
+
+    // delete the temporary file
+    remove("temp.txt");
+
+    printf("File contents reversed successfully.\n");
+
+    return 0;
+}
